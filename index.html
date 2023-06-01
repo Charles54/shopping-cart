@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="cart">
+    <h1>Shopping Cart</h1>
+    <div id="items">
+      <div class="item" id="item1">
+        <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/41/109817/1.jpg?8356" alt="Item 1">
+        <div class="details">
+          <h2>Summer Men Loose Shirt</h2>
+          <p>₦ 15000</p>
+          <div class="actions">
+            <button class="decrease" onclick="adjustQuantity('item1', -1)">-</button>
+            <span id="item1-quantity">1</span>
+            <button class="increase" onclick="adjustQuantity('item1', 1)">+</button>
+            <button class="delete" onclick="deleteItem('item1')">Delete</button>
+            <button class="like" onclick="toggleLike('item1')">❤️</button>
+          </div>
+        </div>
+      </div>
+      <div class="item" id="item2">
+        <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/40/037857/1.jpg?0943" alt="Item 2">
+        <div class="details">
+          <h2>Hisense 32" Inches</h2>
+          <p>₦ 89890</p>
+          <div class="actions">
+            <button class="decrease" onclick="adjustQuantity('item2', -1)">-</button>
+            <span id="item2-quantity">1</span>
+            <button class="increase" onclick="adjustQuantity('item2', 1)">+</button>
+            <button class="delete" onclick="deleteItem('item2')">Delete</button>
+            <button class="like" onclick="toggleLike('item2')">❤️</button>
+          </div>
+        </div>
+      </div>
+      <div class="item" id="item3">
+        <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/29/3531721/1.jpg?8710" alt="Item 3">
+        <div class="details">
+          <h2>Oraimo Power Bank</h2>
+          <p>₦ 10500</p>
+          <div class="actions">
+            <button class="decrease" onclick="adjustQuantity('item3', -1)">-</button>
+            <span id="item3-quantity">1</span>
+            <button class="increase" onclick="adjustQuantity('item3', 1)">+</button>
+            <button class="delete" onclick="deleteItem('item3')">Delete</button>
+            <button class="like" onclick="toggleLike('item3')">❤️</button>
+          </div>
+        </div>
+      </div>
+      <div class="item" id="item4">
+        <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/18/5642032/1.jpg?5066" alt="Item 4">
+        <div class="details">
+          <h2>Samsung Galaxy A13</h2>
+          <p>₦ 118455</p>
+          <div class="actions">
+            <button class="decrease" onclick="adjustQuantity('item4', -1)">-</button>
+            <span id="item4-quantity">1</span>
+            <button class="increase" onclick="adjustQuantity('item4', 1)">+</button>
+            <button class="delete" onclick="deleteItem('item4')">Delete</button>
+            <button class="like" onclick="toggleLike('item4')">❤️</button>
+          </div>
+        </div>
+      </div>
+      <div class="item" id="item5">
+        <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/07/841389/1.jpg?3282" alt="Item 5">
+        <div class="details">
+          <h2>Big Bull Rice 5kg</h2>
+          <p>₦ 4300</p>
+          <div class="actions">
+            <button class="decrease" onclick="adjustQuantity('item5', -1)">-</button>
+            <span id="item5-quantity">1</span>
+            <button class="increase" onclick="adjustQuantity('item5', 1)">+</button>
+            <button class="delete" onclick="deleteItem('item5')">Delete</button>
+            <button class="like" onclick="toggleLike('item5')">❤️</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="total">
+      <h3>Total Price: ₦<span id="total-price">238145</span></h3>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
